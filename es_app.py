@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 假设你的图片放在代码同级目录下的 'images' 文件夹中
-IMAGE_DIR_PATH = os.path.join(CURRENT_DIR, "es图像") 
+IMAGE_DIR_PATH = os.path.join(CURRENT_DIR, "esimages") 
 
 # 数据文件夹放在代码同级目录下的 'es_data' 文件夹中
 DATA_DIR_PATH = os.path.join(CURRENT_DIR, "es_data")
@@ -831,4 +831,5 @@ div[data-testid="stVerticalBlock"] > div:has(div[class*="content-block"]) + div 
     # 更新了署名
     st.markdown('<div class="footer">唐可可的小炸弹 with gemini/ ig:sampoohh/ email: sheepYeoh@outlook.com</div>', unsafe_allow_html=True)
 else:
+
     st.error("Connection failed. Unable to reach Kworb.")
