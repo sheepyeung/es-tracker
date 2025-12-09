@@ -736,9 +736,12 @@ if full_df is not None:
     else:
         date_display = "Indefinite (Need more data)"
 
+    # --- 修改部分开始 (Modified Milestone UI) ---
     st.markdown(f'''<div class="content-block" style="margin-bottom: 20px;">
 <div class="milestone-box">
-<div class="milestone-title">Road to {target_billion} Billion Streams</div>
+<div class="milestone-title">
+    ROAD TO <span style="font-size: 1.6em; margin: 0 6px;">{target_billion} BILLION</span> STREAMS
+</div>
 <div class="milestone-data">
     Remaining: <strong>{remaining_streams:,.0f}</strong>
     <span style="margin: 0 10px; color: #ccc;">|</span>
@@ -747,6 +750,7 @@ if full_df is not None:
 <a href="https://open.spotify.com/album/6cbwstHlsAIIWurIIXXBPd，写上" target="_blank" class="spotify-btn">KEEP STREAMING!!</a>
 </div>
 </div>''', unsafe_allow_html=True)
+    # --- 修改部分结束 ---
 
 
     # --- List ---
@@ -831,5 +835,4 @@ div[data-testid="stVerticalBlock"] > div:has(div[class*="content-block"]) + div 
     # 更新了署名
     st.markdown('<div class="footer">唐可可的小炸弹 with gemini/ ig:sampoohh/ email: sheepYeoh@outlook.com</div>', unsafe_allow_html=True)
 else:
-
     st.error("Connection failed. Unable to reach Kworb.")
